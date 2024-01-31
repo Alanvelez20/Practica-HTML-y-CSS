@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: lightslategrey;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+/*Barra de navegación*/
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f57f09;
+}
+
+/*Body*/
+
+h1{
+    font-size: 50px;
+    color:midnightblue;
+    text-align: center;
+    padding-top: 50px;
+}
+h2{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Acerca de mi*/
+.acerca{
+    
+    max-width: 800px; 
+    margin: 0 auto;
+    margin-bottom: 50px; 
+    padding: 25px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    border-radius:100px;
+}
+.acerca p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*Conocimientos y fortalezas*/
+.cont {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.con, .fort {
+    flex: 1;
+    max-width: 400px; 
+    background-color: #f4f4f4; /* Fondo blanco */
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+    }
+
+    .con, .fort {
+        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+    }
+}
+
+/* Puedes agregar estilos adicionales según sea necesario para cada sección */
+
+
+/*Tabla*/
+.tabla {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid lightslategrey;
+    padding: 8px;
+    text-align: justify;
+    background-color: #f4f4f4;
+    color: black;
+}
+.tabla .header th{
+    font-weight:bold;
+}
+.tabla .info th{
+    
+    font-weight:normal;
+}
+
+/*Personaje*/
+.personaje {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    background-color: #f4f4f4;
+}
+.personaje h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.personaje .imagen img {
+    width: 100%;
+    max-height: 300px; /* Altura máxima para la imagen */
+    object-fit: cover; /* Cubre el área de la imagen manteniendo su proporción */
+    display: block;
+}
+
+.personaje .informacion {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.personaje .informacion p {
+    margin: 10px 0;
+    text-align: justify;
+}
+.personaje a {
+    color: #000;
+    text-decoration: none;
+}
+
+.personaje a:hover {
+    text-decoration: underline;
+}
+/* Reglas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    .personaje {
+        margin: 20px auto;
+    }
+
+    .personaje .imagen img {
+        max-height: 250px; /* Ajusta la altura máxima para dispositivos móviles */
+    }
+
+    .personaje .informacion {
+        padding: 15px;
+    }
+}
+
+/*Formulario de contacto*/
+#contacto {
+    max-width: 600px; 
+    margin: 0 auto;
+    margin-bottom: 50px; 
+    padding: 40px;
+    background-color: #f4f4f4;
+    box-sizing: border-box; 
+}
+
+#contacto form {
+    margin-top: 20px;
+}
+
+#contacto form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#contacto form input,
+#contacto form textarea,
+#contacto form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#contacto form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto form button:hover {
+    background-color: #555;
+}
+
+#contacto .info-contacto {
+    margin-top: 40px;
+}
+
+#contacto .info-contacto h3 {
+    color: #333;
+}
+
+#contacto .info-contacto p {
+    color: #555;
+}
+
+#contacto form input[type="radio"],
+#contacto form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#contacto form .genero,
+#contacto form .interes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#contacto form .genero label,
+#contacto form .interes label {
+    margin-right: 5px;
+}
+
+#contacto form select {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#contacto form select:hover {
+    border-color: #555;
+}
+
+#contacto form textarea {
+    resize: vertical; 
+}
+
+/*Formulario de manera responsiva*/
+@media (max-width: 768px) {
+    #contacto {
+        padding: 20px;
+    }
+
+    #contacto form label,
+    #contacto form input,
+    #contacto form textarea,
+    #contacto form select,
+    #contacto form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    #contacto form .genero,
+    #contacto form .interes {
+        flex-direction: column;
+    }
+
+    #contacto form .genero label,
+    #contacto form .interes label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+/*Pie de pagina*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer h3 {
+    color: #f57f09;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

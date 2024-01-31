@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Contacto</title>
+</head>
+<body> 
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contacto</h1>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Estamos aquí para ayudarte! Contáctanos mediante el formulario o la información de contacto a continuación:</p>
+    
+        <form action="formulario.html" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="genero">Género:</label>
+            <div class="genero">
+                <label for="genero-masculino">Masculino</label>
+                <input type="radio" id="genero-masculino" name="genero" value="masculino" required>
+                <label for="genero-femenino">Femenino</label>
+                <input type="radio" id="genero-femenino" name="genero" value="femenino" required>
+            </div>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+    
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+    
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="guadalajara">Guadalajara</option>
+                <option value="zapopan">Zapopan</option>
+                <option value="tonala">Tonalá</option>
+                <option value="otra">Otro</option>
+            </select>
+    
+            <div class="interes">
+                <label for="interes">Me interesa contratarte:</label>
+                <input type="checkbox" id="interes" name="interes" value="si">
+            </div>
+    
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+</body>
+</html>
